@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      margin: 0 auto;
+      width: 50%;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type=text], input[type=password], select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    input[type=submit] {
+      background-color: #f71717e3;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Sign Up Form</h2>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" required>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" id="password" name="psw-repeat" required>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="bd">Bangladesh</option>
+      <option value="usa">United States</option>
+      <option value="canada">Canada</option>
+      <option value="uk">United Kingdom</option>
+      <option value="australia">Australia</option>
+    </select>
+
+    <input type="submit" value="Sign Up">
+  </form>
+
+</body>
+</html>
 
